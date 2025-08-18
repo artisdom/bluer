@@ -276,7 +276,7 @@ impl CharacteristicWriter {
         }
         match self.socket.try_send(buf) {
             Ok(n) if n == buf.len() => Ok(()),
-            Ok(_) => Err(std::io::Error::new(std::io::ErrorKind::Other, "partial write occured")),
+            Ok(_) => Err(std::io::Error::other("partial write occured")),
             Err(err) => Err(err),
         }
     }

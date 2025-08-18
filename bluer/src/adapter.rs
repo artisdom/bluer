@@ -374,12 +374,12 @@ impl Adapter {
     /// Parameters are the following:
     ///
     /// * `address` -
-    ///     The Bluetooth device address of the remote
-    ///     device.
+    ///   The Bluetooth device address of the remote
+    ///   device.
     /// * `address_type` -
-    ///     The Bluetooth device Address Type. This is
-    ///     address type that should be used for initial
-    ///     connection.
+    ///   The Bluetooth device Address Type. This is
+    ///   address type that should be used for initial
+    ///   connection.
     ///
     /// This method is experimental.
     pub async fn connect_device(&self, address: Address, address_type: AddressType) -> Result<Device> {
